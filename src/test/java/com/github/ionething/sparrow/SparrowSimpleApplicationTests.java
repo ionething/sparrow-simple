@@ -1,5 +1,6 @@
 package com.github.ionething.sparrow;
 
+import com.github.ionething.sparrow.common.enums.DeletedEnum;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
