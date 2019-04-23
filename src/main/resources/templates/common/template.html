@@ -1,0 +1,21 @@
+<html>
+<header>
+	<div th:replace="common/component :: header"></div>
+	<div th:replace="${viewPath} :: css"></div>
+</header>
+<body class="">
+<div class="wrapper">
+	<div th:replace="common/component :: left"></div>
+	<div class="main-panel">
+		<nav th:replace="common/component :: top"></nav>
+		<div class="content">
+			<div class="container-fluid" th:insert="${viewPath} :: content">
+			</div>
+		</div>
+		<footer th:replace="common/component :: footer"></footer>
+	</div>
+</div>
+</body>
+<div th:replace="common/component :: footerJs"></div>
+<div th:replace="${viewPath} :: js"></div>
+</html>
